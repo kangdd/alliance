@@ -1,39 +1,9 @@
-[
-    {
-         "relation": [
-	     "delegate_permission/common.get_login_creds"
-         ],
-         "target": {
-            "namespace": "web",
-            "site": "https://kangdd.github.io"
-         }
-     },
-  {
-    "relation" : [
-      "delegate_permission/handle_all_urls",
-      "delegate_permission/common.get_login_creds"
-    ],
-    "target" : {
-      "namespace" : "android_app",
-      "package_name" : "com.videri.app",
-      "sha256_cert_fingerprints" : [
-        "91:EE:F0:D4:36:D8:DE:BD:44:F6:4A:A1:9C:B1:CA:59:AF:9C:BB:4D:7C:CF:11:EE:62:B7:C7:46:8F:6A:C6:98",
-        "82:6A:8D:FC:31:DC:C4:94:B3:D6:C4:92:AA:C1:60:D9:E9:99:D2:1E:71:FA:17:C7:EA:2B:44:1C:D3:62:0E:E0"
-      ]
-    }
-  },
-  {
-    "relation" : [
-      "delegate_permission/handle_all_urls",
-      "delegate_permission/common.get_login_creds"
-    ],
-    "target" : {
-      "namespace" : "android_app",
-      "package_name" : "com.videri.app.qa",
-      "sha256_cert_fingerprints" : [
-        "91:EE:F0:D4:36:D8:DE:BD:44:F6:4A:A1:9C:B1:CA:59:AF:9C:BB:4D:7C:CF:11:EE:62:B7:C7:46:8F:6A:C6:98",
-        "82:6A:8D:FC:31:DC:C4:94:B3:D6:C4:92:AA:C1:60:D9:E9:99:D2:1E:71:FA:17:C7:EA:2B:44:1C:D3:62:0E:E0"
-      ]
-    }
-  }
-]
+[{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target" : { "namespace": "android_app", "package_name": "com.videri.app.qa",
+               "sha256_cert_fingerprints": ["82:6A:8D:FC:31:DC:C4:94:B3:D6:C4:92:AA:C1:60:D9:E9:99:D2:1E:71:FA:17:C7:EA:2B:44:1C:D3:62:0E:E0"] }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target" : { "namespace": "web", "site": "https://kangdd.github.io" }
+}]
